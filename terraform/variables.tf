@@ -27,3 +27,8 @@ variable "home_public_ip" {
   description = "The public IP of the home network."
   type        = string
 }
+
+variable "ssh_public_key_path" {
+  description = "The public key path for SSH access."
+  type        = string
+}

@@ -17,3 +17,11 @@ output "vcn-name" {
 output "vcn-OCID" {
   value = oci_core_vcn.tf-vcn.id
 }
+
+output "image-name" {
+  value = data.oci_core_images.tf-images.images[0].display_name
+}
+
+output "public-ip-for-compute-instance" {
+  value = oci_core_instance.tf-ubuntu-instance.public_ip
+}
